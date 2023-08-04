@@ -1,0 +1,91 @@
+.div_OyXdy {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 15px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.div_v51KM {
+  display: grid;
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.div_h9rdc {
+  display: flex;
+
+  & .div_YiQUb {
+    margin: auto;
+    --cols: 1;
+    --w: 100px;
+    width: min(100%, var(--w));
+    display: grid;
+    grid-template-columns: repeat(var(--cols), 1fr);
+    gap: 10px;
+  }
+}
+
+.button_Y71IO {
+  position: relative;
+  background: none;
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+
+  overflow: hidden;
+
+  aspect-ratio: 1 / 1;
+
+  color: #ffffff;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &.choose {
+    pointer-events: none;
+  }
+
+  &.choose span {
+    transform: translateY(calc(100% - 1.25px));
+    border-radius: initial;
+  }
+
+  & span {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+
+    background: #000000;
+    transition: all 0.3s ease-in-out;
+    border: 1.25px solid #ffffff;
+    border-radius: 5px;
+  }
+}
+
+.div_421bP {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+
+  & button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 50px;
+    color: inherit;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
