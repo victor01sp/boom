@@ -2,7 +2,7 @@ import Game from "./class/Game.js"
 
 export default ()=>{
 
-    if(!localStorage.getItem('nivel')) localStorage.setItem('nivel', 3)
+    if(!localStorage.getItem('nivel')) localStorage.setItem('nivel', 4)
     const GameMina = new Game(localStorage.getItem('nivel'))
     const alertModal = new AlertModal(document.getElementById('root'), 3)
 
